@@ -6,7 +6,7 @@ const Header = () => {
     const [toggle, setToggle] = useState(false)
 
     return (
-        <div className='w-full h-[70px] bg-[#191919] flex items-center justify-between px-3 sticky top-0'>
+        <div className='fixed top-0 z-50 w-full h-[70px] bg-[#191919] flex items-center justify-between px-3'>
             <div className='w-14 h-14 rounded-full bg-zinc-600'>
                 {/* <Image src={''} alt='profile' /> */}
             </div>
