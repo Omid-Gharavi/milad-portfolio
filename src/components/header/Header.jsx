@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useState } from 'react'
 
 const Header = () => {
@@ -7,8 +7,10 @@ const Header = () => {
 
     return (
         <div className='fixed top-0 z-50 w-full h-[70px] bg-[#191919] flex items-center justify-between px-3'>
-            <div className='w-14 h-14 rounded-full bg-zinc-600'>
-                {/* <Image src={''} alt='profile' /> */}
+            <div>
+                <div className='w-14 h-14 rounded-full bg-zinc-600'>
+                    {/* <Image src={''} alt='profile' /> */}
+                </div>
             </div>
             <div
                 className='relative cursor-pointer w-28 h-12 rounded-3xl bg-zinc-600 flex justify-between items-center'
