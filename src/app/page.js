@@ -10,8 +10,7 @@ export default function Home() {
   // }, []);
 
   return (
-    <main className="min-h-screen bg-[#1f1f1f]">
-      <Header />
+    <main className="relative min-h-screen bg-[#1f1f1f]">
       <Hero />
       <Sample />
     </main>
