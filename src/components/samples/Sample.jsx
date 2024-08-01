@@ -4,7 +4,7 @@ import React from 'react'
 
 const Sample = () => {
     return (
-        <div className='bg-[#1f1f1f] relative mt-52 grid justify-center grid-cols-[537px_537px] max-xl:grid-cols-[minmax(0,537px)] gap-4 max-lg:px-4'>
+        <div className='bg-[#1f1f1f] relative grid justify-center grid-cols-[537px_537px] max-xl:grid-cols-[minmax(0,537px)] gap-4 max-lg:px-4'>
             {
                 lists.map((list, index) => (
                     <Link href={`/sample/${index + 1}`} key={index + 1} className='bg-zinc-700 h-[430px] max-lg:h-[380px] flex flex-col'>
