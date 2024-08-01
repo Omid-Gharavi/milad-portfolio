@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-export default function Biography() {
+export default function BiographyMilad() {
     return (
-        <Link href={'/'}>Don't Click</Link>
+        <Link href='/'>Don not Click</Link>
     )
 }
