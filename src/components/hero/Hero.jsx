@@ -27,7 +27,7 @@ const Hero = () => {
 
     return (
         <div className='sticky top-0 pt-40 flex flex-col items-center' style={styles}>
-            <p className={`text-7xl font-bold text-white`}>Milad Gharavi</p>
+            <p className={`text-7xl font-bold text-white max-lg:text-5xl`}>Milad Gharavi</p>
             <p className={`mt-8 text-zinc-200 text-lg`}>Architecture</p>
         </div>
     )

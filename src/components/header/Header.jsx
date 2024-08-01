@@ -7,10 +7,11 @@ const Header = () => {
 
     return (
         <div className='fixed top-0 z-50 w-full h-[70px] bg-[#191919] flex items-center justify-between px-3'>
-            <div>
+            <div className='flex items-center gap-4 cursor-pointer'>
                 <div className='w-14 h-14 rounded-full bg-zinc-600'>
                     {/* <Image src={''} alt='profile' /> */}
                 </div>
+                <p className='text-zinc-50'>Biography</p>
             </div>
             <div
                 className='relative cursor-pointer w-28 h-12 rounded-3xl bg-zinc-600 flex justify-between items-center'
