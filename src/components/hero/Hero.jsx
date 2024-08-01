@@ -5,7 +5,9 @@ const Hero = () => {
     const [scrollOpacity, setScrollOpacity] = useState()
 
     useEffect(() => {
-
+        if (window.scrollY >= 300) {
+            setScrollOpacity(0)
+        }
         const handleScroll = () => {
             const position = window.scrollY;
             const newOpacity = 1 - (position / 280); // Adjust 300 to change the scroll threshold
@@ -18,7 +20,6 @@ const Hero = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
 
     const styles = {
         opacity: scrollOpacity,
