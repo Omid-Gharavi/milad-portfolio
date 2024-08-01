@@ -51,9 +51,7 @@ const Hero = () => {
             </div>
             <div
                 onClick={() => {
-                    if (screen.width >= 1024) {
-                        scrollTo(0, 0)
-                    }
+                    scrollTo(0, 0)
                 }}
                 className='transition-all duration-100 ease-in-out rotate-180 cursor-pointer scale-50 fixed z-50 right-0 bottom-0 mt-16 border-white border-[2px] border-solid rounded-full w-28 h-28'
                 style={visibility}

@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 // import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Header = () => {
     const [toggle, setToggle] = useState(false)
@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <div className={`${path === '/' ? 'fixed' : 'sticky'} top-0 z-50 w-full h-[70px] bg-[#191919] flex items-center justify-between px-3`}>
-            <Link href='/biography' className='flex items-center gap-4 cursor-pointer'>
+            <Link href={path === '/biography' ? '/' : '/biography'} className='flex items-center gap-4 cursor-pointer'>
                 <div className='w-14 h-14 rounded-full bg-zinc-600'>
                     {/* <Image src={''} alt='profile' /> */}
                 </div>
