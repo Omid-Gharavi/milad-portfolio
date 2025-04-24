@@ -5,7 +5,10 @@ const Hero = () => {
     const [scrollOpacity, setScrollOpacity] = useState()
 
     useEffect(() => {
-        console.log(window.scrollY)
+        console.log(self)
+
+        scrollTo(window.scrollX, window.scrollY)
+
         if (window.scrollY >= 300) {
             setScrollOpacity(0)
         }

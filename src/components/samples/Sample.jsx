@@ -9,7 +9,7 @@ const Sample = () => {
                 lists.map((list, index) => (
                     <Link href={`/sample/${index + 1}`} key={index + 1} className='bg-zinc-700 h-[430px] max-lg:h-[380px] flex flex-col'>
                         {/* <Image src={list.img} alt="img" /> */}
-                        <div className='bg-black mt-auto text-white py-10 flex justify-center'>{list.text}</div>
+                        <div className='bg-black mt-auto text-white py-10 flex justify-center'>{list.text}{index + 1}</div>
                     </Link>
                 ))
             }

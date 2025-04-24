@@ -1,7 +1,8 @@
 'use client'
-import { useEffect } from "react"
+import { useEffect, use } from "react";
 
-export default function ProductId({ params }) {
+export default function ProductId(props) {
+    const params = use(props.params);
     useEffect(() => {
         localStorage.setItem('name', 'omid')
     })

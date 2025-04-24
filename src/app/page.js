@@ -1,4 +1,3 @@
-import Header from '@/components/header/Header';
 import Hero from '@/components/hero/Hero';
 import Sample from '@/components/samples/Sample';
 
